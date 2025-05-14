@@ -8,7 +8,6 @@ class ResConfigSettings(models.TransientModel):
         string="Weight Required in POS",
         related="company_id.weight_required",
         readonly=False,
-        default=True,
         help="Check if you want to require the"
         " customer's weight according to the age warning",
     )

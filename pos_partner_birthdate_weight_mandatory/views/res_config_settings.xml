@@ -4,7 +4,7 @@
         <field name="model">res.config.settings</field>
         <field
             name="inherit_id"
-            ref="pos_partner_birthdate_warning.view_res_config_settings_birthdate_warning"
+            ref="pos_customer_age_warning.view_res_config_settings_birthdate_warning"
         />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='age_warning']" position="after">

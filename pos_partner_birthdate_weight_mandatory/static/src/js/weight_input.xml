@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_partner_birthdate_weight_mandatory.weightInputPopup">
+        <div class="popup popup-textinput">
+            <div class="modal-header">
+                <h4 class="modal-title"><t t-esc="props.title" /></h4>
+            </div>
+            <div class="modal-body">
+                <div class="fw-bolder" style="color:red;text-align:left;">
+                    <t t-esc="props.body"/>
+                </div>
+                <span style="display: flex;" class="fw-bolder">
+                    <span style="margin-top: 6px;">
+                        Please update the patient weight: 
+                    </span>
+                    <input class="o_input" type="number" 
+                          t-model="state.inputValue" t-ref="input"
+                          style="width: 10%;"/>
+                    <span style="margin-top: 6px;" t-if="props.weight_uom">
+                        <t t-esc="props.weight_uom[1]"/>
+                    </span>
+                </span>
+            </div>
+            <div class="footer footer-flex modal-footer">
+                <div class="button confirm highlight btn btn-lg btn-primary" t-on-click="confirm">
+                    <t t-esc="props.confirmText" />
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

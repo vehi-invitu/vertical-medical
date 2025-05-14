@@ -11,8 +11,16 @@
     "application": False,
     "installable": True,
     "depends": [
-        "pos_partner_birthdate_warning",
+        "pos_customer_age_warning",
         "pos_partner_weight",
     ],
     "data": ["views/res_config_settings.xml"],
+    "assets": {
+        "point_of_sale._assets_pos": [
+            "pos_partner_birthdate_weight_mandatory/static/src/js/weight_input.xml",
+            "pos_partner_birthdate_weight_mandatory/static/src/js/weight_input.esm.js",
+            "pos_partner_birthdate_weight_mandatory/static/src/js/pos_store.esm.js",
+            "pos_partner_birthdate_weight_mandatory/static/src/js/partner_editor.esm.js"
+        ]
+    },
 }
